@@ -3,4 +3,11 @@ pipeline {
   triggers {
     githubPush()
   }
+  stages {
+    stage ('Setup'){
+            steps{
+                echo "test"
+            }
+        }
+  }
 }

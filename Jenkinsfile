@@ -13,6 +13,7 @@ pipeline {
     }
     stage('Deliver') {
       steps {
+        sh 'docker container rm --force jc-online-container'
         sh 'docker run --name jc-online-container -p 2021:2021 tmangowal/jc-online-pipeline &'
       }
     }

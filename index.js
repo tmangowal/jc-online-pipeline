@@ -4,7 +4,7 @@ const cors = require("cors");
 express.use(cors());
 
 express.get("/", (req, res) => {
-  res.send("Express API");
+  res.send("Express API Version 2");
 });
 
 express.listen(2021, () => {
